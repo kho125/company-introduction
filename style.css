@@ -1,0 +1,258 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Pretendard Variable", Pretendard;
+  word-break: keep-all;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+li {
+  list-style-type: none;
+}
+button {
+  border: none;
+}
+
+/* header */
+header {
+  height: 68px;
+  border-bottom: 1px solid #E8EEF2;
+}
+header .container {
+  height: 68px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+header .container .logo {
+
+}
+header .container .logo a {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+header .container ul.menu {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+header .container ul.menu li {
+  
+}
+header .container ul.menu li a {
+  padding: 6px 12px;
+  font-weight: 600;
+}
+
+/* COMMON */
+section {
+  padding: 80px 0;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+section h2 {
+  margin-bottom: 40px;
+  font-size: 32px;
+  text-align: center;
+}
+
+/* 함께하는 회사 */
+.greetings-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.greetings-wrap .greetings-left {}
+.greetings-wrap .greetings-left strong {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 64px;
+}
+.greetings-wrap .greetings-left p {
+  margin-bottom: 20px;
+  color: #464A4D;
+  line-height: 24px;
+}
+.greetings-wrap .greetings-left button {
+  width: 152px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #F23A2F;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: .1s;
+}
+.greetings-wrap .greetings-left button:hover {
+  background-color: #E16868;
+  font-size: 22px;
+  transition: .1s;
+}
+.greetings-wrap .greetings-right {}
+.greetings-wrap .greetings-right img {
+  width: 500px;
+  height: 700px;
+  border-radius: 4px;
+}
+
+/* 우리가 하는 일 */
+.work-wrap {
+
+}
+.work-wrap .work-box-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.work-wrap .work-box-wrap .work-box {
+  padding: 10px;
+  width: 384px;
+}
+.work-wrap .work-box-wrap .work-box img {
+  margin-bottom: 14px;
+  width: 100%;
+  height: 219px;
+  border-radius: 4px;
+}
+.work-wrap .work-box-wrap .work-box .title {
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 600;
+}
+.work-wrap .work-box-wrap .work-box .contents {
+  line-height: 22px;
+}
+
+/* 우리가 걸어온 길 */
+.history-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.history-wrap .history-box-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.history-wrap .history-box-wrap .history-box {
+  padding: 24px;
+  width: 340px;
+  box-shadow: 0 0 10px 4px #f2f2f2;
+  border-radius: 4px;
+}
+.history-wrap .history-box-wrap .history-box img {
+  margin-bottom: 8px;
+  width: 40px;
+  height: 40px;
+}
+.history-wrap .history-box-wrap .history-box .title {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #F23A2F;
+}
+.history-wrap .history-box-wrap .history-box .contents {
+  font-size: 14px;
+  font-weight: 500;
+}
+.history-wrap .history-box-wrap .history-box hr {
+  margin: 20px 0 14px;
+}
+.history-wrap .history-box-wrap .history-box .year {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+/* 고객의 찐한 리뷰 */
+.review-section {
+  max-width: 100%;
+  background-color: #17191A;
+}
+.review-section h2 {
+  color: #fff;
+}
+
+.review-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.review-wrap .review-left {
+}
+.review-wrap .review-left img {
+  /* margin-right: 20px; */
+  height: 250px;
+  display: block;
+}
+.review-wrap .review-right {}
+.review-wrap .review-right p {
+  font-size: 22px;
+  color: #fff;
+  line-height: 40px;
+}
+
+/* bottom */
+.bottom-wrap {
+  margin: 100px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bottom-wrap .bottom-text {
+  color: #17191A;
+  font-size: 36px;
+  font-weight: 700;
+}
+.bottom-wrap a {}
+.bottom-wrap a button {
+  width: 152px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #F23A2F;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  background-color: #000;
+  color: #fff;
+}
+footer .logo {
+  margin-bottom: 30px;
+}
+footer .logo a {
+  font-size: 50px;
+  font-weight: 900;
+  color: #fff;
+}
+footer .menu {
+  margin-bottom: 80px;
+  display: flex;
+  gap: 30px;
+}
+footer .menu li {}
+footer .menu li a {
+  font-size: 24px;
+  color: #fff;
+}
+footer p {}
