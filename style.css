@@ -23,7 +23,9 @@ button {
 /* header */
 header {
   height: 68px;
+  padding: 0 20px;
   border-bottom: 1px solid #E8EEF2;
+  background-color: #fff;
 }
 header .container {
   height: 68px;
@@ -33,31 +35,29 @@ header .container {
   margin: 0 auto;
   max-width: 1200px;
 }
-header .container .logo {
-
-}
 header .container .logo a {
   font-size: 24px;
   font-weight: 900;
 }
-
 header .container ul.menu {
   display: flex;
   gap: 16px;
   justify-content: center;
   align-items: center;
 }
-header .container ul.menu li {
-  
-}
 header .container ul.menu li a {
   padding: 6px 12px;
   font-weight: 600;
+  transition: .1s;
+}
+header .container ul.menu li a:hover {
+  color: #F23A2F;
+  transition: .1s;
 }
 
 /* COMMON */
 section {
-  padding: 80px 0;
+  padding: 80px 20px;
   margin: 0 auto;
   max-width: 1200px;
 }
@@ -67,13 +67,18 @@ section h2 {
   text-align: center;
 }
 
+@media (max-width: 1120px) {
+  section {
+    padding: 40px 20px;
+  }
+}
+
 /* 함께하는 회사 */
 .greetings-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.greetings-wrap .greetings-left {}
 .greetings-wrap .greetings-left strong {
   display: block;
   margin-bottom: 20px;
@@ -92,46 +97,63 @@ section h2 {
   color: #fff;
   font-size: 20px;
   cursor: pointer;
-  transition: .1s;
 }
 .greetings-wrap .greetings-left button:hover {
   background-color: #E16868;
-  font-size: 22px;
-  transition: .1s;
 }
-.greetings-wrap .greetings-right {}
 .greetings-wrap .greetings-right img {
   width: 500px;
   height: 700px;
   border-radius: 4px;
 }
 
+@media (max-width: 1120px) {
+  .greetings-wrap {
+    justify-content: center;
+  }
+  .greetings-wrap .greetings-left {
+    text-align: center;
+  }
+  .greetings-wrap .greetings-right img {
+    display: none;
+  }
+}
+
 /* 우리가 하는 일 */
 .work-wrap {
-
-}
-.work-wrap .work-box-wrap {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
-.work-wrap .work-box-wrap .work-box {
+.work-wrap .work-box {
   padding: 10px;
   width: 384px;
+  height: 100%;
 }
-.work-wrap .work-box-wrap .work-box img {
+.work-wrap .work-box img {
   margin-bottom: 14px;
   width: 100%;
   height: 219px;
   border-radius: 4px;
 }
-.work-wrap .work-box-wrap .work-box .title {
+.work-wrap .work-box .title {
   margin-bottom: 20px;
   font-size: 30px;
   font-weight: 600;
 }
-.work-wrap .work-box-wrap .work-box .contents {
+.work-wrap .work-box .contents {
   line-height: 22px;
+}
+
+@media (max-width: 1120px) {
+  .work-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .work-wrap .work-box {
+    width: 100%;
+  }
 }
 
 /* 우리가 걸어온 길 */
@@ -174,6 +196,23 @@ section h2 {
   font-weight: 900;
 }
 
+@media (max-width: 1120px) {
+  .history-wrap .history-box-wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 750px) {
+  .history-wrap .history-box-wrap {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .history-wrap .history-box-wrap .history-box {
+    width: 100%;
+  }
+}
 /* 고객의 찐한 리뷰 */
 .review-section {
   max-width: 100%;
@@ -187,7 +226,7 @@ section h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 80px;
 }
 .review-wrap .review-left {
 }
@@ -196,11 +235,24 @@ section h2 {
   height: 250px;
   display: block;
 }
-.review-wrap .review-right {}
 .review-wrap .review-right p {
   font-size: 22px;
   color: #fff;
   line-height: 40px;
+}
+
+@media (max-width: 1120px) {
+  .review-wrap {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .review-wrap .review-left img {
+    width: 100%;
+  }
+  .review-wrap .review-right p {
+    font-size: 16px;
+    line-height: 30px;
+  }
 }
 
 /* bottom */
@@ -215,7 +267,6 @@ section h2 {
   font-size: 36px;
   font-weight: 700;
 }
-.bottom-wrap a {}
 .bottom-wrap a button {
   width: 152px;
   height: 48px;
@@ -226,14 +277,27 @@ section h2 {
   cursor: pointer;
 }
 
+@media (max-width: 1120px) {
+  .bottom-wrap {
+    margin: 80px 0;
+    flex-direction: column;
+  }
+  .bottom-wrap .bottom-text {
+    margin-bottom: 24px;
+    font-size: 28px;
+    text-align: center;
+  }
+}
+
 /* footer */
 footer {
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 400px;
+  height: 100%;
   background-color: #000;
   color: #fff;
 }
@@ -250,9 +314,23 @@ footer .menu {
   display: flex;
   gap: 30px;
 }
-footer .menu li {}
 footer .menu li a {
   font-size: 24px;
   color: #fff;
 }
-footer p {}
+
+@media (max-width: 750px) {
+  footer .menu li a {
+    font-size: 20px;
+  }
+}
+@media (max-width: 480px) {
+  footer .menu {
+    margin-bottom: 40px;
+    display: block;
+  }
+  footer .menu li {
+    padding: 6px 0;
+    text-align: center;
+  }
+}
