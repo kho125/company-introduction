@@ -57,11 +57,11 @@ header .container ul.menu li a:hover {
 
 .login-wrap {
   padding: 160px 40px;
+  /* max-width: 300px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background: #08f; */
 }
 
 .login-wrap .title {
@@ -80,10 +80,16 @@ header .container ul.menu li a:hover {
   border-radius: 8px;
   border: 1px solid #E8EEF2;
   background: #FFF;
+  outline: none;
 }
-
 .login-wrap input::placeholder {
   color: #bbb;
+}
+.login-wrap input:hover {
+  border: 1px solid #C0C5FF;
+}
+.login-wrap input:focus {
+  border: 1px solid #004FFF;
 }
 
 .login-wrap button {
@@ -101,13 +107,20 @@ header .container ul.menu li a:hover {
   font-weight: 700;
   cursor: pointer;
 }
+.login-wrap button:hover {
+  opacity: .8;
+}
 .login-wrap a {
   font-size: 14px;
   font-weight: 600;
 }
+.login-wrap a:hover {
+  opacity: .8;
+}
 
 /* footer */
 footer {
+  bottom: 0;
   padding: 30px;
   display: flex;
   flex-direction: column;
