@@ -39,20 +39,39 @@ header .container .logo a {
   font-size: 24px;
   font-weight: 900;
 }
-header .container ul.menu {
+header .container .menu {
   display: flex;
   gap: 16px;
   justify-content: center;
   align-items: center;
 }
-header .container ul.menu li a {
+header .container .menu li a {
   padding: 6px 12px;
   font-weight: 600;
   transition: .1s;
 }
-header .container ul.menu li a:hover {
+header .container .menu li a:hover {
   color: #F23A2F;
   transition: .1s;
+}
+
+@media (max-width: 768px) {
+  header .container .menu {
+    display: none;
+  }
+  .menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .menu-button .menu-bar {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    margin-bottom: 5px;
+  }
 }
 
 .login-wrap {

@@ -13,6 +13,11 @@
       <div class="logo">
         <a href="/">LOGO.</a>
       </div>
+      <button class="menu-button">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
       <ul class="menu">
         <li><a href="#">커뮤니티</a></li>
         <li><a href="#">이벤트</a></li>
@@ -179,5 +184,16 @@
     </ul>
     <p>Copyright © Coupang Corp. 2014-2025 All Rights Reserved.</p>
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const menuButton = document.querySelector('.menu-button');
+    const menu = document.querySelector('.menu');
+
+    menuButton.addEventListener('click', function() {
+      menu.classList.toggle('active');
+    });
+  });
+  </script>
 </body>
 </html>
