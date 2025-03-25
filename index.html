@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>회사 소개페이지</title>
   <link rel="stylesheet" href="style.css">
+
+  <script defer src="/index.js"></script>
 </head>
 <body>
   <!-- header -->
@@ -13,11 +15,23 @@
       <div class="logo">
         <a href="/">LOGO.</a>
       </div>
-      <button class="menu-button">
-        <span class="menu-bar"></span>
-        <span class="menu-bar"></span>
-        <span class="menu-bar"></span>
-      </button>
+
+      <input class="nav-check" type="checkbox" id="nav-check" />
+      <label class="nav-icon" for="nav-check">
+        <span class="nav-sticks"></span>
+      </label>
+
+      <div class="mb-menu-wrap">
+        <div class="menu-content"></div>
+        <ul class="mb-menu">
+          <li><a href="#">커뮤니티</a></li>
+          <li><a href="#">이벤트</a></li>
+          <li><a href="#">고객센터</a></li>
+          <li><a href="/login.html">로그인</a></li>
+          <li><a href="#">회원가입</a></li>
+        </ul> 
+      </div>
+      
       <ul class="menu">
         <li><a href="#">커뮤니티</a></li>
         <li><a href="#">이벤트</a></li>
@@ -184,16 +198,6 @@
     </ul>
     <p>Copyright © Coupang Corp. 2014-2025 All Rights Reserved.</p>
   </footer>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-    const menuButton = document.querySelector('.menu-button');
-    const menu = document.querySelector('.menu');
-
-    menuButton.addEventListener('click', function() {
-      menu.classList.toggle('active');
-    });
-  });
-  </script>
+  
 </body>
 </html>
