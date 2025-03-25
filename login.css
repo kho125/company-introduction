@@ -147,7 +147,6 @@ header .container .menu li a:hover {
 /* login */
 .login-wrap {
   padding: 160px 40px;
-  /* max-width: 300px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -209,7 +208,7 @@ header .container .menu li a:hover {
 
 /* footer */
 footer {
-  bottom: 0;
+  /* bottom: 0; */
   padding: 30px;
   display: flex;
   flex-direction: column;
