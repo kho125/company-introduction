@@ -1,9 +1,16 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const menuButton = document.querySelector('.menu-button');
   const menu = document.querySelector('.menu');
+  const navCheck = document.getElementById('nav-check');
 
-  menuButton.addEventListener('click', function() {
-    menu.classList.toggle('active');
+  menuButton?.addEventListener('click', function () {
+    menu?.classList.toggle('active');
+  });
+
+  window.addEventListener('resize', function () {
+    if (window.innerWidth > 768) {
+      if (navCheck) navCheck.checked = false;
+    }
   });
 });
 
