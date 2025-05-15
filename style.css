@@ -183,17 +183,20 @@ section h2 {
   color: #464A4D;
   line-height: 24px;
 }
-.greetings-wrap .greetings-left button {
+.greetings-wrap .greetings-left a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 152px;
-  height: 48px;
+  height: 42px;
   border-radius: 8px;
   background-color: #F23A2F;
   color: #fff;
   font-size: 20px;
   cursor: pointer;
 }
-.greetings-wrap .greetings-left button:hover {
-  background-color: #E16868;
+.greetings-wrap .greetings-left a:hover {
+  background-color: #ff3636;
 }
 .greetings-wrap .greetings-right img {
   width: 500px;
@@ -207,6 +210,9 @@ section h2 {
   }
   .greetings-wrap .greetings-left {
     text-align: center;
+  }
+  .greetings-wrap .greetings-left a {
+    width: 100%;
   }
   .greetings-wrap .greetings-left strong {
     font-size: 50px;
@@ -315,6 +321,7 @@ section h2 {
     width: 100%;
   }
 }
+
 /* 고객의 찐한 리뷰 */
 .review-section {
   max-width: 100%;
@@ -357,21 +364,22 @@ section h2 {
   }
 }
 
-/* bottom */
-.bottom-wrap {
+/* question */
+.question-wrap {
   margin: 100px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.bottom-wrap .bottom-text {
+.question-wrap .question-text {
   color: #17191A;
   font-size: 36px;
   font-weight: 700;
 }
-.bottom-wrap a button {
+.question-wrap a {
+  padding: 10px 20px;
   width: 152px;
-  height: 48px;
+  text-align: center;
   border-radius: 8px;
   background-color: #F23A2F;
   color: #fff;
@@ -380,11 +388,11 @@ section h2 {
 }
 
 @media (max-width: 1120px) {
-  .bottom-wrap {
+  .question-wrap {
     margin: 80px 0;
     flex-direction: column;
   }
-  .bottom-wrap .bottom-text {
+  .question-wrap .question-text {
     margin-bottom: 24px;
     font-size: 28px;
     text-align: center;
