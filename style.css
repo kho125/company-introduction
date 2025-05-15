@@ -217,8 +217,13 @@ section h2 {
 }
 
 /* 우리가 하는 일 */
+.color-wrap {
+  max-width: 100%;
+  background-color: rgba(242, 58, 46, 0.08)
+}
 .work-wrap {
   display: flex;
+  justify-content: center;
 }
 .work-wrap .work-box {
   padding: 10px;
